@@ -2,8 +2,8 @@ package com.bridgelabz;
 
 public class Maximumintegerday13 {
 
-    String checkMaximum(String x, String y, String z) {
-        String max = x; //Assuming x is the largest (initially)
+    <E extends Comparable<E>> E checkMaximum(E x, E y, E z) {
+        E max = x; //Assuming x is the largest (initially)
 
         if (y.compareTo(max) > 0)
             max = y; // y is the largest so far
@@ -15,12 +15,18 @@ public class Maximumintegerday13 {
     }
 
     public static void main(String[] args) {
-        Maximumintegerday13 obj = new Maximumintegerday13 ();
-        System.out.println("The maximum integer is : " + obj.checkMaximum("Apple", "Peach", "Banana"));
+        Maximumintegerday13 Obj = new Maximumintegerday13();
+        System.out.println("The maximum Integer is : " +Obj.checkMaximum(1, 7, 5));
+
+        System.out.println("The maximum Float is : " + Obj.checkMaximum(1.25, 7.480, 9.55));
+
+        System.out.println("The maximum String is : " + Obj.checkMaximum("Apple", "Peach", "Banana"));
 
     }
 
 }
+
+
 
 
 
