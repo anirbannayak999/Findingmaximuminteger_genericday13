@@ -11,7 +11,7 @@ public class MoodAnalyser {
             MoodAnalyzer moodAnalyzer = new MoodAnalyzer();
 
             System.out.println(moodAnalyzer.analyzeMood("I'm in Sad mood!!"));
-            System.out.println(moodAnalyzer.analyzeMood("I'm happy!!"));
+            System.out.println(moodAnalyzer.analyzeMood("I'm happy!!very very"));
         }
 
     }
